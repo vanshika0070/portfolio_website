@@ -1,0 +1,139 @@
+
+
+
+.banner {
+  display: flex;
+ flex-direction: column;
+ align-items:start;
+ position: relative;
+ justify-content: center;
+ height: 100vh;
+ text-align: start;
+ /* background: linear-gradient(135deg, #0c203517, #030607); */
+ color:var(--white);
+ overflow: hidden;
+ box-sizing: border-box;
+}
+
+
+
+.banner .container{
+  margin-top: 15%;
+}
+
+  .banner-inner{
+    z-index: 99;
+  }
+
+.h1 , h1 {
+  font-size: 75px;
+  color:var(--highlights);
+  text-shadow: 3px 3px var(--cta);
+  font-weight: bold;
+  color:var(--highlights);
+}
+
+.banner p {
+  margin-top: 15px;
+  line-height: 1rem;
+  font-size: 20px;
+  margin-bottom: 0rem;
+}
+
+
+.qr{
+  height: 100%;
+  width: 100%;
+}
+
+.avatar{
+  position: absolute;
+  top:0;
+  height: 100vh;
+}
+
+
+.typewriter-text {
+  font-weight: 400;
+  color: var(--white);
+  white-space: nowrap;
+  overflow: hidden;
+  height: 1.6em; /* Set fixed height to prevent layout jump */
+  display: inline-block;
+  width: 100%; /* Make it full-width */
+  animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+
+
+@media screen and (min-width: 576px) and (max-width: 1000px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    text-align:start;
+    color: var(--white);
+  }
+
+    .banner-inner{
+    margin-top: 30%;
+    z-index: 99;
+  }
+
+  .banner h1 {
+    font-size: 60px; /* better visibility for mobile/tablet */
+    font-weight: bold;
+  }
+
+  .avatar {
+    height: 60vh;
+    width: auto;
+  }
+}
+
+
+
+
+@media screen and (max-width: 576px) {
+
+  .banner {
+    display: flex;
+   flex-direction: column;
+   align-items:start;
+   position: relative;
+      height: 90vh;
+   justify-content: center;
+   text-align: start;
+   color:var(--white);
+  }
+
+  .banner-inner{
+    margin-top: 30%;
+    z-index: 99;
+  }
+
+  .banner h1 {
+    font-size: 40px; /* better visibility for mobile/tablet */
+    font-weight: bold;
+  }
+
+  .avatar {
+    max-width: 100vw;
+  left: 0;
+  right: 0;
+   height: 90vh;
+  margin: 0 auto;
+  display: none;
+  }
+}
+
+
+
+
+
